@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 55, 128);
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+.content {
+    text-align: center;
+    background-color: rgb(0, 55, 128);
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* Snow effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
